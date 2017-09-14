@@ -63,19 +63,19 @@ summary(dt)
 # data visualization
 
 #Max.Heart rate achieved Vs Disease By Gender and Chestpain types"
-ggplot(hd,aes(y=thalach,x=DV,fill=DV))+geom_boxplot()+facet_grid(Sex~cp,labeller = label_both)+ggtitle("   Max.Heart rate achieved Vs Disease By Gender and Chestpain types")+xlab("Presence of Heart Disease")+ylab("Max. Heart Rate Achieved")
+ggplot(dt,aes(y=thalach,x=DV,fill=DV))+geom_boxplot()+facet_grid(Sex~cp,labeller = label_both)+ggtitle("   Max.Heart rate achieved Vs Disease By Gender and Chestpain types")+xlab("Presence of Heart Disease")+ylab("Max. Heart Rate Achieved")
 
 #summary(hd$Sex)Cholestrol Levels Vs Disease By Gender and Chestpain types
-ggplot(hd,aes(y=chol,x=DV,fill=DV))+geom_boxplot()+facet_grid(Sex~cp,labeller = label_both)+ggtitle("   Cholestrol Levels Vs Disease By Gender and Chestpain types")+xlab("Presence of Heart Disease")+ylab("Cholestrol Levels")
+ggplot(dt,aes(y=chol,x=DV,fill=DV))+geom_boxplot()+facet_grid(Sex~cp,labeller = label_both)+ggtitle("   Cholestrol Levels Vs Disease By Gender and Chestpain types")+xlab("Presence of Heart Disease")+ylab("Cholestrol Levels")
 
-p<-ggplot(hd,aes(x=Age,y=thalach,color=DV))
+p<-ggplot(dt,aes(x=Age,y=thalach,color=DV))
 # Max. Heart Rate Achieved Vs Age by DV
 p+geom_point(size=3)+facet_grid(.~DV,labeller = label_both)+ylab("Max. Heart Rate Achieved")+theme_bw()+ggtitle("                       Max. Heart Rate Achieved Vs Age by DV")
 
 p+geom_point(size=3)+facet_grid(thal~Sex+fbs,labeller = label_both)+ggtitle("Cholestrol Levels Vs Age By Gender and fasting blood sugar level")
 q2
 
-p1<-ggplot(hd,aes(x=trestbps,y=thalach,color=DV))
+p1<-ggplot(dt,aes(x=trestbps,y=thalach,color=DV))
 q3<-p1+geom_point()+facet_grid(.~DV)
 q3
 
