@@ -1,5 +1,3 @@
-
-
 # libraries involved
 library(boot) 
 library(car)
@@ -158,43 +156,3 @@ rocCurve$sensitivities
 rocCurve$specificities
 rocCurve$au
 
-
-# libraries involved
-library(boot) 
-library(car)
-library(QuantPsyc)
-library(lmtest)
-library(sandwich)
-library(vars)
-library(nortest)
-library(MASS)
-library(zoo)
-library(ROCR)
-library(grid)
-library(broom)
-library(caret)
-library(tidyr)
-library(dplyr)
-library(scales)
-library(ggplot2)
-library(ggthemr)
-library(ggthemes)
-library(gridExtra)
-library(data.table)
-library(caret)
-library(ggplot2)
-library(MASS)
-library(car)
-library(mlogit)
-library(sqldf)
-library(Hmisc)
-library(boot) 
-library(QuantPsyc)
-library(lmtest)
-library(sandwich)
-library(vars)
-library(nortest)
-library(zoo)
-library(InformationValue)
-library(ROCR)
-library(pROC)
